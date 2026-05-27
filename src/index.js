@@ -1,5 +1,5 @@
 const express = require("express");
-const { add, multiply, greet } = require("./utils");
+const { add, multiply, divide, greet } = require("./utils");
 
 const app = express();
 const PORT = process.env.PORT || 3000;

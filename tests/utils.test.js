@@ -1,4 +1,4 @@
-const { add, multiply, greet } = require("../src/utils");
+const { add, multiply, divide, greet } = require("../src/utils");
 
 describe("add()", () => {
   test("adds two positive numbers", () => {
@@ -21,6 +21,16 @@ describe("multiply()", () => {
 
   test("multiply by zero returns zero", () => {
     expect(multiply(99, 0)).toBe(0);
+  });
+});
+
+describe("divide()", () => {
+  test("divides two numbers", () => {
+    expect(divide(10, 2)).toBe(5);
+  });
+
+  test("divide by zero returns Infinity", () => {
+    expect(divide(5, 0)).toBe(Infinity);
   });
 });
 
