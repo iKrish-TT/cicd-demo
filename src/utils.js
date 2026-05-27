@@ -19,6 +19,16 @@ function multiply(a, b) {
 }
 
 /**
+ * Divides two numbers.
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function divide(a, b) {
+  return a / b;
+}
+
+/**
  * Returns a greeting string.
  * @param {string} name
  * @returns {string}
@@ -30,4 +40,4 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
-module.exports = { add, multiply, greet };
+module.exports = { add, multiply, divide, greet };

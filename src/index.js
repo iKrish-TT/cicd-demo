@@ -24,6 +24,8 @@ app.get("/math", (req, res) => {
   let result;
   if (op === "multiply") {
     result = multiply(numA, numB);
+  } else if (op === "divide") {
+    result = divide(numA, numB);
   } else {
     result = add(numA, numB);
   }
