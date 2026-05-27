@@ -1,0 +1,29 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "description": "Node.js project with GitHub Actions CI/CD pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "node -e \"console.log('Build complete ✅')\"",
+    "lint": "eslint src/**/*.js tests/**/*.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "lines": 70
+      }
+    }
+  }
+}
